@@ -14,6 +14,13 @@ import org.springframework.web.bind.annotation.*;
 public class RESTMethods {
     @Autowired
     JdbcTemplate jdbcTemplate;
+
+    @GetMapping("/ping")
+    public ResponseEntity<String> ping(){
+        return ResponseEntity.ok()
+                .body("");
+    }
+
     @GetMapping("/get")
      public ResponseEntity<Item> getNameQuantity(@RequestHeader("EAN") String EAN){
         HttpHeaders responseHeaders = new HttpHeaders();
