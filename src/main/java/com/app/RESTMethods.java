@@ -16,7 +16,7 @@ public class RESTMethods {
     JdbcTemplate jdbcTemplate;
 
     @GetMapping("/ping")
-    public ResponseEntity<String> ping(){
+    public ResponseEntity<?> ping(){
         return ResponseEntity.ok()
                 .body("");
     }
