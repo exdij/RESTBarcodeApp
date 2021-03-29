@@ -5,6 +5,7 @@ REST Webservice that works as a backend service for the [Barcode Scanner app](ht
 
 ### Teck Stack
 * Java
+* Gradle
 * Spring
 * Lombok
 * MySQL
